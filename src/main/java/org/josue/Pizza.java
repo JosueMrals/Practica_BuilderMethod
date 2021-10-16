@@ -6,6 +6,10 @@ public class Pizza {
     private String salsa;
     private String ingredientes;
 
+    public Pizza()
+    {
+
+    }
     public String getNombre() {
         return nombre;
     }
@@ -37,9 +41,14 @@ public class Pizza {
     public void setIngredientes(String ingredientes) {
         this.ingredientes = ingredientes;
     }
+
     @Override
     public String toString() {
-        return "Pizza: " + this.getNombre() + " - " + this.getMasa() + " - " + this.getSalsa() +
-                " - " + this.getIngredientes();
+        return "Pizza{" +
+                "nombre='" + nombre + '\'' +
+                ", masa='" + masa + '\'' +
+                ", salsa='" + salsa + '\'' +
+                ", ingredientes='" + ingredientes + '\'' +
+                '}';
     }
 }

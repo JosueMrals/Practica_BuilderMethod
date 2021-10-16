@@ -1,6 +1,6 @@
 package org.josue;
 
-public class BarbacoaPizzaBuilder extends PizzaBuilder {
+public abstract class BarbacoaPizzaBuilder extends PizzaBuilder {
     @Override
     public void ponerNombre() {
         pizza.setNombre("Barbacoa");
@@ -18,4 +18,4 @@ public class BarbacoaPizzaBuilder extends PizzaBuilder {
         pizza.setIngredientes("mozzarella, ternera, cebolla, maíz");
     }
 }
-}
+
