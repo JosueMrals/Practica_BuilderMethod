@@ -1,19 +1,24 @@
 package org.josue;
 
-public class PizzaBuilder {
-    private PizzaBuilder pizzaBuilder;
-    public void setPizzaBuilder(PizzaBuilder pb) {
-        pizzaBuilder = pb;
+public abstract class PizzaBuilder {
+    protected Pizza pizza;
+
+    public Pizza getPizza()
+    {
+        return pizza;
     }
-    public Pizza getPizza() {
-        return pizzaBuilder.getPizza();
+
+    public void crearNuevaPizza()
+        {
+            pizza = new Pizza();
+        }
+
+        public abstract void ponerNombre();
+        public abstract void crearMasa();
+        public abstract void crearSalsa();
+        public abstract void crearIngredientes();
+
+
     }
-    public void crearPizza() {
-        pizzaBuilder.crearNuevaPizza();
-        pizzaBuilder.ponerNombre();
-        pizzaBuilder.crearMasa();
-        pizzaBuilder.crearSalsa();
-        pizzaBuilder.crearIngredientes();
-    }
-}
-}
+
+
